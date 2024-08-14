@@ -66,3 +66,14 @@ Current List (3rd quarter 2022): 	13flist2022q3.pdf
 Expected row count:	24388
 Extracted row count:	24388
 ```
+
+```
+for f in `ls data/pdf13flist/*.pdf` ; do python sec13ftoolbox.py --file "$f" ; done
+```
+
+
+2006 Q4 (data/pdf13flist/13flist2006q4.pdf) is the first year this extractor works.  
+Earlier PDFs are in a non-linear structure and this structure parsing approach fails.
+Using MacOS Preview export with linearize doesn't change anything.
+Of course earlier than 2004 we get scans of printouts.
+The Document AI model works fine on those.

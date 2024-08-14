@@ -3,5 +3,6 @@ click
 numpy
 bs4
 pypdf2
+nltk
 tabula-py
 openpyxl
